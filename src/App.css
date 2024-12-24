@@ -1,0 +1,114 @@
+.App{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+
+/* Todo Wrapper */
+.todo-wrapper{
+    background-color: rgb(40, 40, 40);
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow:  2px 2px 4px rgba(113, 113, 125, 0.76);
+   padding: 20px 3%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin: 40px;
+}
+
+
+/* Todo Form */
+form{
+    width: 90%;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-todo{
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 1.3px solid #7C93C3;
+    color: #fff;
+}
+
+.input-todo::placeholder{
+    color: rgba(202, 200, 200, 0.671);
+    font-weight: 500;
+}
+
+.btn{
+    height: 40px;
+    width: 20%;
+    padding: 0 5px;
+    color: rgba(255, 255, 255, 0.856);
+    font-weight: 500;
+    background-color: #7C93C3;
+    border: 1px solid #7C93C3;
+    
+    transition: .5s;
+}
+
+/* Todo */
+.todo{
+   color: #fff;
+   width: 90%;
+   background-color: #7C93C3;
+   padding: 15px;
+   border-radius: 5px;
+   margin-top: 10px;
+}
+
+
+.todo-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-complete{
+    text-decoration: line-through;
+    color: rgba(183, 183, 183, 0.645)
+}
+
+.icon{
+    display: flex;
+    font-size: 22px;
+
+}
+input[type="checkbox"].checbox {
+            margin-right: 5px;
+            scale: 1.4;
+           accent-color: #566da0;
+     
+        }
+
+
+
+
+
+
+
+@media (max-width:1024px) {
+    .todo-wrapper{
+        width: 60%;
+    }
+}
+@media (max-width:768px) {
+  
+    .todo-wrapper{
+        width: 70%;
+    }
+   
+}
+@media (max-width:426px) {
+    .todo-wrapper{
+        width: 90%;
+    }
+}
